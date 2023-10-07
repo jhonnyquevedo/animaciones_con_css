@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+}
+
+nav .logo-menu{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    color: white;
+}
+
+nav .logo-cart{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    color: #33363d;
+}
+
+nav img{
+    width: 30px;
+}
+
+nav .buscador{
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+    padding: 5px;
+}
+
+nav input{
+    width: 90%;
+    height: 30px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 15px;
+}
+
+
+
