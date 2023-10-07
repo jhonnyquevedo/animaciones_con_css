@@ -85,7 +85,7 @@ main .cards .card{
     width: 250px;
     padding: 30px;
     margin: 15px;
-    background-color: #ececec;
+    background-color: white;
 }
 main .cards .card img{
     width: 230px;
@@ -102,19 +102,13 @@ main .cards .card .comprar{
     padding-top: 15px;
 }
 
-main .comprar button{
+main button{
     width: 100px;
     height: 30px;
     background-color: orangered;
     border: none;
     border-radius: 20px;
     color: white;
-}
-
-main .navigation button{
-    width: 30px;
-    height: 30px;
-    color: #00579c;
 }
 
 /*  */
