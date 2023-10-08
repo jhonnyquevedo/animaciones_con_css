@@ -16,13 +16,13 @@
 
 nav{
     grid-area: nav;
+    background-color: #EE5601;
 }
 
 nav .logos{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: blue;
     color: white;
     padding: 10px;
 }
@@ -43,6 +43,10 @@ nav .logo-cart{
 
 nav img{
     width: 30px;
+}
+
+nav .lista{
+    display: none;
 }
 
 section{
@@ -87,8 +91,23 @@ main .cards .card{
     margin: 15px;
     background-color: #ececec;
 }
+
 main .cards .card img{
     width: 230px;
+    transition: width 1s;
+}
+
+main .cards .card img:hover{
+    width: 250px;
+}
+
+main .cards .card .mulco{
+    filter: grayscale(1);
+}
+
+main .cards .card .mulco:hover{
+    filter: grayscale(0);
+    width: 260px;
 }
 
 main .info{
@@ -117,6 +136,58 @@ main .navigation button{
     color: #00579c;
 }
 
-/*  */
+footer{
+    grid-area: footer;
+    background-color: orangered;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img{
+    width: 20px;
+}
+
+@media (min-width: 576px){
+    .container{
+        grid-template-areas: 
+            "nav section"
+            "nav main"
+            "footer main"
+        ;
+        grid-template-columns: 240px 1fr;
+        grid-template-rows: 70px 1fr 60px;
+    }
+
+    main .cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    nav{
+        flex-direction: column;
+        justify-content: start;
+        text-align: center;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+    }
+
+    nav p{
+        color: white;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+    }
+
+    nav .logo-menu img{
+        display: none;
+    }
+
+    nav .logo-cart{
+        display: none;
+    }
+
+    nav .lista{
+        display: block;
+        padding-top: 15px;
+    }
+}
 
 
